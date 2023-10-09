@@ -62,19 +62,19 @@ android {
     flavorDimensions "default"
 
     productFlavors {
-        dev {
+        development {
             dimension "default"
             resValue "string", "appName", "[DEV] {{appName}}"
             applicationIdSuffix ".dev"
         }
 
-        stg {
+        staging {
             dimension "default"
             resValue "string", "appName", "[STG] {{appName}}"
             applicationIdSuffix ".stg"
         }
 
-        prod {
+        production {
             dimension "default"
             resValue "string", "appName", "{{appName}}"
         }
