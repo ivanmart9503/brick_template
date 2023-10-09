@@ -9,6 +9,8 @@ void run(HookContext context) {
 
   Process.run('fvm', ['flutter', 'pub', 'get']);
 
+  Process.run('make', ['init']);
+
   final progress = context.logger.progress('All done! 🎉');
 
   progress.complete();

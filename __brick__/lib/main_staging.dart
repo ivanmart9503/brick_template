@@ -1,6 +1,4 @@
 import 'package:app/app.dart';
-import 'package:flutter/material.dart';
+import 'package:app/core/core.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => run(Environments.production.name);

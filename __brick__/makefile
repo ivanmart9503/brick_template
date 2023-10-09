@@ -1,7 +1,6 @@
 # Code generation shortcuts
 
-gen_build:
-	fvm flutter pub get && fvm flutter pub run build_runner
+gen_build := fvm flutter pub get && fvm flutter pub run build_runner
 
 init:
 	$(gen_build) build --delete-conflicting-outputs
