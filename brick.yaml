@@ -38,11 +38,11 @@ vars:
     prompt: What is the name of the app to display when installed? 
   bundleId:
     type: string
-    description: The bundle identifier of the app.
+    description: Bundle ID of the app.
     default: com.awesome.app
     prompt: What is the bundle identifier of the app?
   flutterVersion:
     type: string
-    description: The version of Flutter to use.
+    description: Flutter's version to use.
     default: "3.13.6"
     prompt: What version of Flutter do you want to use?

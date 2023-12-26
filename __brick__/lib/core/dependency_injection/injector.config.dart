@@ -11,7 +11,7 @@
 import 'package:app/core/dependency_injection/flavors.dart' as _i4;
 import 'package:app/core/dependency_injection/modules.dart' as _i10;
 import 'package:app/core/utils/helpers/app_info_helper.dart' as _i8;
-import 'package:app/core/utils/services/local_storage_service.dart' as _i9;
+import 'package:app/core/utils/services/preferences_service.dart' as _i9;
 import 'package:app/core/utils/services/network_service.dart' as _i5;
 import 'package:dio/dio.dart' as _i3;
 import 'package:get_it/get_it.dart' as _i1;
@@ -59,8 +59,8 @@ extension GetItInjectableX on _i1.GetIt {
     );
     gh.lazySingleton<_i8.AppInfoHelper>(
         () => _i8.AppInfoHelper(gh<_i6.PackageInfo>()));
-    gh.factory<_i9.LocalStorageService>(
-        () => _i9.LocalStorageService(gh<_i7.SharedPreferences>()));
+    gh.factory<_i9.PreferencesService>(
+        () => _i9.PreferencesService(gh<_i7.SharedPreferences>()));
     return this;
   }
 }

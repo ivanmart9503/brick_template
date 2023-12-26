@@ -51,7 +51,7 @@ class TokenInterceptor extends Interceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) {
-    final token = getIt<LocalStorageService>().token;
+    final token = getIt<PreferencesService>().token;
 
     if (token.isNotEmpty) {
       options.headers.addAll({'Authorization': 'Bearer $token'});
